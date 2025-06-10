@@ -220,6 +220,7 @@ function startAnimation(){
             pMove(pvalue);
             showWinner(pvalue, cmove);
             ;}, 1500)
+            pAgain.disabled = false;
         }
         else{
 
@@ -327,6 +328,7 @@ function playAgain(){
         preCGameAnimation();
         cmove = numGenerator();
         cMove(cmove);
+        pAgain.disabled = true;
 
     }
 }
