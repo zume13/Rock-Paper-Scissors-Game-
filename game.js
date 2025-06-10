@@ -221,6 +221,7 @@ function startAnimation(){
             showWinner(pvalue, cmove);
             ;}, 1500)
             pAgain.disabled = false;
+            startButton.disabled = true;
         }
         else{
 
@@ -329,6 +330,8 @@ function playAgain(){
         cmove = numGenerator();
         cMove(cmove);
         pAgain.disabled = true;
+        startButton.disabled = false;
+        
 
     }
 }
