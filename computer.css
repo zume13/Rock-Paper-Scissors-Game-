@@ -1,0 +1,104 @@
+.computerSection{
+
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) 50px minmax(0, 1fr);
+    grid-row: 1;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.cChoiceButtons{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+
+}
+
+#cRock{
+
+    width: 50%;
+    height: 50%;
+    background-color: #0a5c9f;
+    border: solid 1px grey;
+    padding: 0;
+    border-radius: 20px;
+
+}
+
+#cPaper{
+
+    width: 50%;
+    height: 50%;
+    background-color: #0a5c9f;
+    border: solid 1px grey;
+    padding: 0;
+    border-radius: 20px;
+
+}
+
+#cScissors{
+
+    width: 50%;
+    height: 50%;
+    background-color: #0a5c9f;
+    border: solid 1px grey;
+    padding: 0;
+    border-radius: 20px;
+
+}
+
+.cRock{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.cPaper{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.cScissors{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+#cPreText{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#cGameAnimations{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-height: 100%;
+    max-width: 100%;
+
+}
+
+#cGameAnimations img{
+
+  max-width: 80%;       
+  height: auto;
+  width: auto;
+  max-height: 80%;   
+  object-fit: contain;
+
+}
