@@ -31,6 +31,7 @@ const buttonMap = {
     pScissors: 3
 
 }
+pAgain.disabled = true;
 
 function btnenabler(){
 
