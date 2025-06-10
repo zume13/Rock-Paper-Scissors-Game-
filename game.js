@@ -31,7 +31,26 @@ const buttonMap = {
     pScissors: 3
 
 }
-pAgain.disabled = true;
+
+function startBttnEnabler(){
+
+    startButton.disabled = false;
+}
+
+function pAgaintBttnEnabler(){
+
+    pAgain.disabled = false;
+}
+
+function function startBttndisabler(){
+
+    startButton.disabled = true;
+}
+
+function pAgainBttndisabler(){
+
+    startButton.disabled = true;
+}
 
 function btnenabler(){
 
@@ -221,8 +240,11 @@ function startAnimation(){
             pMove(pvalue);
             showWinner(pvalue, cmove);
             ;}, 1500)
-            pAgain.disabled = false;
-            startButton.disabled = true;
+            pAgaintBttnEnabler();
+            startBttndisabler();
+
+    startButton.disabled = true;
+}
         }
         else{
 
@@ -330,8 +352,8 @@ function playAgain(){
         preCGameAnimation();
         cmove = numGenerator();
         cMove(cmove);
-        pAgain.disabled = true;
-        startButton.disabled = false;
+        pAgainBttndisabler();
+        startBttnEnabler();
         
 
     }
