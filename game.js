@@ -32,24 +32,28 @@ const buttonMap = {
 
 }
 
-function startBttnEnabler(){
+function startButtonDisable(){
+
+    startButton.disabled = true;
+
+}
+
+function startButtonEnable(){
 
     startButton.disabled = false;
+
 }
 
-function pAgaintBttnEnabler(){
+function pAgainDisable(){
+
+    pAgain.disabled = true;
+
+}
+
+function pAgainEnable(){
 
     pAgain.disabled = false;
-}
 
-function function startBttndisabler(){
-
-    startButton.disabled = true;
-}
-
-function pAgainBttndisabler(){
-
-    startButton.disabled = true;
 }
 
 function btnenabler(){
@@ -240,9 +244,8 @@ function startAnimation(){
             pMove(pvalue);
             showWinner(pvalue, cmove);
             ;}, 1500)
-            pAgaintBttnEnabler();
-            startBttndisabler();
-}
+            startButtonDisable();
+            pAgainEnable();
         }
         else{
 
@@ -350,9 +353,8 @@ function playAgain(){
         preCGameAnimation();
         cmove = numGenerator();
         cMove(cmove);
-        pAgainBttndisabler();
-        startBttnEnabler();
-        
+        startButtonEnable();
+        pAgainDisable();
 
     }
 }
@@ -370,7 +372,7 @@ function scoreReset(){
 
 }
 
-pAgainBttndisabler();
+pAgainDisable();
 preCGameAnimation();
 prePlayerAnimation(buttonMap, pvalue); 
 startAnimation();
