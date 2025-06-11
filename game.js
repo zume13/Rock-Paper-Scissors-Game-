@@ -242,8 +242,6 @@ function startAnimation(){
             ;}, 1500)
             pAgaintBttnEnabler();
             startBttndisabler();
-
-    startButton.disabled = true;
 }
         }
         else{
@@ -372,6 +370,7 @@ function scoreReset(){
 
 }
 
+pAgainBttndisabler();
 preCGameAnimation();
 prePlayerAnimation(buttonMap, pvalue); 
 startAnimation();
