@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock! Paper! Scissors!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="player.css">
+    <link rel="stylesheet" href="computer.css">
+</head>
+<body>
+    <div class="gameSection">
+
+        <div class="computerSection">
+            <div class="cChoiceButtons">
+                <button id="cRock">
+                    <img class="cRock" src="images/cbtn1.png" alt="ROCK">
+                </button>
+                <button id="cPaper">
+                    <img class="cPaper" src="images/cbtn2.png" alt="PAPER">
+                </button>
+                <button id="cScissors">
+                    <img class="cScissors" src="images/cbtn3.png" alt="SCISSORS">
+                </button>
+            </div>
+
+            <div id="cPreText">
+                Computer is Thinking
+            </div>
+
+            <div id="cGameAnimations">
+                
+            </div>
+
+        </div>
+
+        <div class="midSection">
+
+            <div class="buttonDiv">
+                <button id="startButton">
+                    <img class="startPic" src="images/start.png" alt="start">
+                </button>
+                <button id="pAgain">
+                    <img src="images/PA.png" class="pPic">
+                </button>
+                <button id="reset">
+                    <img src="images/reset.png" class="preset">
+
+                </button>
+            </div>
+
+            <div class="vsGrid">
+                <img class="vsIcon" src="images/vs.png" alt="vs">
+            </div>
+
+            <div class="rightSection">
+                    <div id="compScore">
+                        0
+                    </div>
+                    <div id="playerScore">
+                        0
+                    </div>
+            </div>
+
+        </div>
+
+        <div class="playerSection">
+
+            <div id="pGameAnimations">
+                
+            </div>
+
+            <div id="pPreText">
+                Choose your Move
+            </div>
+
+            <div class="pChoiceButtons">
+                <button id="pRock">
+                    <img class="pRock" src="images/1.png" alt="ROCK">
+                </button>
+                <button id="pPaper">
+                    <img class="pPaper" src="images/2.png" alt="PAPER">
+                </button>
+                <button id="pScissors">
+                    <img class="pScissors" src="images/3.png" alt="SCISSORS">
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+<script src="game.js"></script>
+</html>
