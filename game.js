@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", ()=>{
 const cRock = document.getElementById("cRock");
 const cPaper = document.getElementById("cPaper");
 const cScissors = document.getElementById("cScissors");
@@ -378,7 +379,7 @@ prePlayerAnimation(buttonMap, pvalue);
 startAnimation();
 playAgain();
 scoreReset();
-
+});
 
 
 
